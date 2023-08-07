@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Other values-->
+    <attr name="colorLinerL" format="reference" />
+    <attr name="colorText" format="reference" />
+    <attr name="colorMac" format="reference" />
+    <attr name="colorCanvas" format="reference" />
+
+</resources>

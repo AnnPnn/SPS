@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Config panel -->
+
+    <!-- Footer-->
+
+    <granch.sps.graphics.CanvasView
+        android:id="@+id/canView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:id="@+id/configPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/gray_90"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:clipToOutline="true"
+        android:radius="40dp"
+        android:visibility="visible">
+
+        <com.google.android.material.circularreveal.CircularRevealGridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <!-- Green zone-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:fontFamily="@font/podkova"
+                android:text="@string/tvGreen"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <!-- Yellow zone -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:fontFamily="@font/podkova"
+                android:text="@string/tvYellow"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <!-- Red zone -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/podkova"
+                android:text="@string/tvRed"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+
+        </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+        <com.google.android.material.circularreveal.CircularRevealGridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+
+            tools:ignore="ExtraText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextX1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/x1"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextX2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/x2"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextX3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/x3"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextX4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/x4"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextY1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/y1"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextY2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/y2"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextY3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/y3"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextY4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/y4"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewMAC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:fontFamily="@font/podkova"
+                android:text="@string/mac1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextMAC1"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/xx_xx_xx"
+                android:importantForAutofill="no"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,TextFields" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewMAC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:fontFamily="@font/podkova"
+                android:text="@string/mac2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextMAC2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/xx_xx_xx"
+                android:importantForAutofill="no"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,TextFields" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewMAC3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:fontFamily="@font/podkova"
+                android:text="@string/mac3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextMAC3"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/xx_xx_xx"
+                android:importantForAutofill="no"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,TextFields" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewMAC4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:fontFamily="@font/podkova"
+                android:text="@string/mac4"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextMAC4"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:ems="10"
+                android:fontFamily="@font/podkova"
+                android:hint="@string/xx_xx_xx"
+                android:importantForAutofill="no"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,TextFields" />
+
+        </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/podkova"
+            android:text="@string/buttonSave"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/config"
+            android:fontFamily="@font/podkova"
+            android:textStyle="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/start"
+            android:fontFamily="@font/podkova"
+            android:textStyle="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/stop"
+            android:fontFamily="@font/podkova"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRadiusOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/draw_radius_off"
+            android:fontFamily="@font/podkova"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRadiusOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/draw_radius_on"
+            android:fontFamily="@font/podkova"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/imagineViewError"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/error"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>

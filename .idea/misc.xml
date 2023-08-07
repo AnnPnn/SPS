@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/app/sps/app/src/main/res/drawable-v24/anim_button.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable-v24/ic_baseline_error_flashing.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2115" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/anim_button.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/anim_button1.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/checkbox_selector.xml" value="0.363" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/ic_baseline_error.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/ic_baseline_error_24.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.3075" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/layout_bg.xml" value="0.3965" />
+        <entry key="..\:/app/sps/app/src/main/res/drawable/layout_bg2.xml" value="0.1" />
+        <entry key="..\:/app/sps/app/src/main/res/layout-v31/activity_main.xml" value="0.33469202898550726" />
+        <entry key="..\:/app/sps/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/app/sps/app/src/main/res/layout/activity_start.xml" value="0.358695652173913" />
+        <entry key="..\:/app/sps/app/src/main/res/layout/anim_button.xml" value="0.4076086956521739" />
+        <entry key="..\:/app/sps/app/src/main/res/menu/my.xml" value="0.42916666666666664" />
+        <entry key="..\:/app/sps/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.213" />
+        <entry key="..\:/app/sps/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
